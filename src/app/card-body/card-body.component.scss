@@ -32,7 +32,8 @@
 }
 
 #card-front {
-  background-color: lightgrey;
+  background-color: black;
+  backface-visibility: hidden;
 }
 
 #card-back {
@@ -49,7 +50,14 @@
 .images {
   width: 175px;
   height: 175px;
+  transition: height .5s, width .5s;
 }
+
+.images:hover {
+  width: 180px;
+  height: 180px;
+}
+
 .textMain {
   margin-left: .5rem;
   font-size: large;
