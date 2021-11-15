@@ -1,0 +1,58 @@
+.tp-wrapper {
+  -webkit-perspective: 800px;
+  perspective: 800px;
+}
+
+.card-style {
+  width: 175px;
+  height: 175px;
+  font-size: small;
+  box-sizing: content-box;
+
+  margin-top: .75rem;
+  margin-left: .5rem;
+
+}
+
+.card-body-style{
+  position: relative;
+  width: 175px;
+  height: 175px;
+  object-fit: cover;
+}
+
+.content-style {
+  object-fit: cover;
+  position: center;
+  color: white;
+}
+
+.flipped {
+  transform-style: preserve-3d;
+}
+
+#card-front {
+  background-color: lightgrey;
+}
+
+#card-back {
+  top: -11rem;
+  background-color: black;
+
+  transform: rotateY(-180deg);
+  backface-visibility: hidden;
+
+
+  border-bottom: 1px solid white;
+}
+
+.images {
+  width: 175px;
+  height: 175px;
+}
+.textMain {
+  margin-left: .5rem;
+  font-size: large;
+  color: white;
+}
+
